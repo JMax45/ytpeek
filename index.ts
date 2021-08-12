@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import { Markup, Telegraf } from 'telegraf';
 import ytdl from 'ytdl-core';
+import axios from 'axios';
 
 const bot = new Telegraf(process.env.BOT_TOKEN!);
 
@@ -8,10 +9,16 @@ async function download(videoId: string, format: 'video' | 'audio') {
 	let info = await ytdl.getInfo(videoId);
 
 	let ytdlFormat = ytdl.chooseFormat(info.formats, {
-		quality: format === 'video' ? 'highest' : 'highestaudio',
+		quality: 'highest',
+		filter: format === 'video' ? 'videoandaudio' : 'audioonly',
 	});
+
+	const file = await (
+		await axios({ url: ytdlFormat.url, method: 'GET', responseType: 'stream' })
+	).data;
+
 	return {
-		stream: ytdl(videoId, { format: ytdlFormat }),
+		stream: file,
 		filename: info.videoDetails.title,
 	};
 }
