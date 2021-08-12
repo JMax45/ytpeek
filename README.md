@@ -70,7 +70,7 @@ To get a local copy up and running follow these simple steps.
    ```
 4. Build the source code
    ```sh
-       npm run build
+   npm run build
    ```
 
 <!-- USAGE EXAMPLE -->
@@ -109,5 +109,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-shield]: https://img.shields.io/github/issues/JMax45/ytpeek?style=for-the-badge
 [issues-url]: https://github.com/JMax45/ytpeek/issues
 [license-shield]: https://img.shields.io/github/license/JMax45/ytpeek?style=for-the-badge
-[license-url]: https://github.com/JMax45/ytpeek/blob/master/LICENSE.txt
+[license-url]: https://github.com/JMax45/ytpeek/blob/master/LICENSE
 [software-demonstration1]: https://i.imgur.com/U6aoSQC.png
