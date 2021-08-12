@@ -9,7 +9,7 @@ async function download(videoId: string, format: 'video' | 'audio') {
 	let info = await ytdl.getInfo(videoId);
 
 	let ytdlFormat = ytdl.chooseFormat(info.formats, {
-		quality: 'highest',
+		quality: format === 'video' ? 'highestvideo' : 'highestaudio',
 		filter: format === 'video' ? 'videoandaudio' : 'audioonly',
 	});
 
