@@ -75,7 +75,7 @@ To get a local copy up and running follow these simple steps.
 
 <!-- USAGE EXAMPLE -->
 
-## Distributor usage
+## Usage
 
 You can launch the bot with `npm start`
 
