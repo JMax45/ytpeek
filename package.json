@@ -1,0 +1,35 @@
+{
+	"name": "ytpeek",
+	"version": "1.0.0",
+	"description": "A Telegram bot to download YouTube videos in audio or video format",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "node dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JMax45/ytpeek.git"
+	},
+	"keywords": [
+		"YouTube",
+		"Telegram",
+		"Video",
+		"Audio"
+	],
+	"author": "JMax45",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/JMax45/ytpeek/issues"
+	},
+	"homepage": "https://github.com/JMax45/ytpeek#readme",
+	"dependencies": {
+		"dotenv": "^10.0.0",
+		"telegraf": "^4.4.1",
+		"typescript": "^4.3.5",
+		"ytdl-core": "^4.9.1"
+	},
+	"devDependencies": {
+		"@types/node": "^16.6.0"
+	}
+}
