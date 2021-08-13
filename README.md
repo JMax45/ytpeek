@@ -5,6 +5,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
+  <a href="https://t.me/ytpeekbot">
+    <img src="https://i.imgur.com/Fhg2bU8.png" alt="Logo" width="80" height="80">
+  </a>
   <h3 align="center">YtPeek</h3>
 
   <p align="center">
@@ -44,6 +47,8 @@
 YtPeek is a Telegram bot that allows you to download videos in audio or video format
 
 [![Software demonstration 1][software-demonstration1]](#)
+
+You can find a live demo [here](https://t.me/ytpeekbot) (might not be online all the time)
 
 ### Built With
 
